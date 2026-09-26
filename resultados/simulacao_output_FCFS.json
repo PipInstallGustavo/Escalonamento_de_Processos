@@ -1,0 +1,166 @@
+{
+    "algoritmo": "FCFS",
+    "metricas": {
+        "trocas_contexto": 3,
+        "tempo_total_simulacao": 14,
+        "tempo_espera_medio": 4.75,
+        "tempo_turnaround_medio": 8.25,
+        "tempo_resposta_medio": 4.75
+    },
+    "processos": [
+        {
+            "id": "P1",
+            "tempo_chegada": 0,
+            "duracao": 5,
+            "prioridade": 2,
+            "tempo_restante": 0,
+            "tempo_inicio": 0,
+            "tempo_fim": 5,
+            "tempo_resposta": 0,
+            "tempo_espera": 0,
+            "tempo_turnaround": 5,
+            "estado": "CONCLUIDO"
+        },
+        {
+            "id": "P2",
+            "tempo_chegada": 0,
+            "duracao": 2,
+            "prioridade": 3,
+            "tempo_restante": 0,
+            "tempo_inicio": 5,
+            "tempo_fim": 7,
+            "tempo_resposta": 5,
+            "tempo_espera": 5,
+            "tempo_turnaround": 7,
+            "estado": "CONCLUIDO"
+        },
+        {
+            "id": "P3",
+            "tempo_chegada": 1,
+            "duracao": 4,
+            "prioridade": 1,
+            "tempo_restante": 0,
+            "tempo_inicio": 7,
+            "tempo_fim": 11,
+            "tempo_resposta": 6,
+            "tempo_espera": 6,
+            "tempo_turnaround": 10,
+            "estado": "CONCLUIDO"
+        },
+        {
+            "id": "P4",
+            "tempo_chegada": 3,
+            "duracao": 3,
+            "prioridade": 4,
+            "tempo_restante": 0,
+            "tempo_inicio": 11,
+            "tempo_fim": 14,
+            "tempo_resposta": 8,
+            "tempo_espera": 8,
+            "tempo_turnaround": 11,
+            "estado": "CONCLUIDO"
+        }
+    ],
+    "historico_timeline": [
+        {
+            "tempo": 0,
+            "cpu": "P1",
+            "fila_prontos": [
+                "P2"
+            ]
+        },
+        {
+            "tempo": 1,
+            "cpu": "P1",
+            "fila_prontos": [
+                "P2",
+                "P3"
+            ]
+        },
+        {
+            "tempo": 2,
+            "cpu": "P1",
+            "fila_prontos": [
+                "P2",
+                "P3"
+            ]
+        },
+        {
+            "tempo": 3,
+            "cpu": "P1",
+            "fila_prontos": [
+                "P2",
+                "P3",
+                "P4"
+            ]
+        },
+        {
+            "tempo": 4,
+            "cpu": "P1",
+            "fila_prontos": [
+                "P2",
+                "P3",
+                "P4"
+            ]
+        },
+        {
+            "tempo": 5,
+            "cpu": "P2",
+            "fila_prontos": [
+                "P3",
+                "P4"
+            ]
+        },
+        {
+            "tempo": 6,
+            "cpu": "P2",
+            "fila_prontos": [
+                "P3",
+                "P4"
+            ]
+        },
+        {
+            "tempo": 7,
+            "cpu": "P3",
+            "fila_prontos": [
+                "P4"
+            ]
+        },
+        {
+            "tempo": 8,
+            "cpu": "P3",
+            "fila_prontos": [
+                "P4"
+            ]
+        },
+        {
+            "tempo": 9,
+            "cpu": "P3",
+            "fila_prontos": [
+                "P4"
+            ]
+        },
+        {
+            "tempo": 10,
+            "cpu": "P3",
+            "fila_prontos": [
+                "P4"
+            ]
+        },
+        {
+            "tempo": 11,
+            "cpu": "P4",
+            "fila_prontos": []
+        },
+        {
+            "tempo": 12,
+            "cpu": "P4",
+            "fila_prontos": []
+        },
+        {
+            "tempo": 13,
+            "cpu": "P4",
+            "fila_prontos": []
+        }
+    ]
+}
