@@ -1,0 +1,192 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f4f6f9;
+    color: #333;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+h2 {
+    margin-bottom: 12px;
+    color: #34495e;
+    font-size: 1.2rem;
+}
+
+.card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+    margin-bottom: 20px;
+}
+
+.subtitle {
+    font-size: 0.9rem;
+    color: #7f8c8d;
+    margin-bottom: 15px;
+}
+
+.inputs-inline {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.inputs-inline div {
+    display: flex;
+    flex-direction: column;
+}
+
+input, select {
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 0.95rem;
+    margin-top: 5px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 15px;
+}
+
+th, td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+
+th {
+    background-color: #f8f9fa;
+    color: #555;
+}
+
+.btn-primary {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.btn-primary:hover {
+    background-color: #219150;
+}
+
+.btn-secundary {
+    background: #3498db;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-secundary:hover {
+    background: #2980b9;
+}
+
+.btn-delete {
+    background: #e74c3c;
+    color: white;
+    border: none;
+    padding: 5px 8px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.escondido {
+    display: none;
+}
+
+.metricas-box {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.metrica {
+    flex: 1;
+    background: white;
+    padding: 15px;
+    border-radius: 6px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.metrica h3 {
+    font-size: 0.9rem;
+    color: #7f8c8d;
+    margin-bottom: 8px;
+}
+
+.metrica p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.tabela-diagrama {
+    width: 100%;
+    background: white;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.tabela-diagrama th {
+    background: #34495e;
+    color: white;
+}
+
+.executando {
+    background-color: #2ecc71;
+    color: white;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+.idle {
+    background-color: #ecf0f1;
+    color: #95a5a6;
+}
+
+.fila-prontos {
+    font-size: 0.82rem;
+    color: #7f8c8d;
+    font-style: italic;
+    text-align: left;
+    padding-left: 12px;
+}
+
+.btn-primary:disabled {
+    background-color: #95a5a6;
+    cursor: not-allowed;
+}
+
+.metricas-box {
+    flex-wrap: wrap;
+}

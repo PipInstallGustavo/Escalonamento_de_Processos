@@ -1,0 +1,23 @@
+{
+  "metricas": {
+    "tempoMedioVida": 7.5,
+    "tempoMedioEspera": 3.75,
+    "trocasContexto": 4
+  },
+  "diagramaTempo": [
+    {"tempo": 0, "processoExecucao": "P1"},
+    {"tempo": 1, "processoExecucao": "P1"},
+    {"tempo": 2, "processoExecucao": "P2"},
+    {"tempo": 3, "processoExecucao": "P2"},
+    {"tempo": 4, "processoExecucao": "P3"},
+    {"tempo": 5, "processoExecucao": "P3"},
+    {"tempo": 6, "processoExecucao": "P1"},
+    {"tempo": 7, "processoExecucao": "P1"},
+    {"tempo": 8, "processoExecucao": "P4"},
+    {"tempo": 9, "processoExecucao": "P4"},
+    {"tempo": 10, "processoExecucao": "P3"},
+    {"tempo": 11, "processoExecucao": "P3"},
+    {"tempo": 12, "processoExecucao": "P1"},
+    {"tempo": 13, "processoExecucao": "P4"}
+  ]
+}

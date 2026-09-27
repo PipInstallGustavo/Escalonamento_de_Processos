@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Escalonamento de Processos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>⚙️ Simulador de Escalonamento SO</h1>
+
+        <div class="card">
+            <h2>1. Configurações</h2>
+            <div class="inputs-inline">
+                <div>
+                    <label>Algoritmo:</label>
+                    <select id="algoritmo">
+                        <option value="FCFS">FCFS (First Come, First Served)</option>
+                        <option value="SJF">SJF (Shortest Job First)</option>
+                        <option value="SRTF">SRTF (Shortest Remaining Time)</option>
+                        <option value="PRIO">Prioridade Sem Preempção</option>
+                        <option value="PRIO_P">Prioridade Com Preempção</option>
+                        <option value="RR">Round Robin</option>
+                        <option value="RR_PRIO_AGE">Round Robin c/ Prioridade e Aging</option>
+                    </select>
+                </div>
+                <div>
+                    <label>Quantum:</label>
+                    <input type="number" id="quantum" value="2" min="1">
+                </div>
+                <div>
+                    <label>Aging:</label>
+                    <input type="number" id="aging" value="1" min="1">
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>2. Processos de Entrada</h2>
+            <p class="subtitle">Adicione os processos e seus detalhes (id, chegada, duração, prioridade).</p>
+            <table id="tabela-processos">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Chegada (s)</th>
+                        <th>Duração (s)</th>
+                        <th>Prioridade</th>
+                        <th>Ação</th>
+                    </tr>
+                </thead>
+                <tbody id="lista-processos">
+                    <!-- Processos via JavaScript -->
+                </tbody>
+            </table>
+            <button id="btn-add-processo" class="btn-secundary">+ Adicionar Processo</button>
+        </div>
+
+        <button id="btn-simular" class="btn-primary">▶ Executar Simulação</button>
+
+        <!-- RESULTADOS-->
+        <div id="area-resultados" class="escondido">
+            <h2>📊 Resultados</h2>
+
+            <div class="metricas-box">
+                <div class="metrica">
+                    <h3>Tempo Médio de Vida (Turnaround)</h3>
+                    <p id="res-turnaround">-</p>
+                </div>
+                <div class="metrica">
+                    <h3>Tempo Médio de Espera</h3>
+                    <p id="res-espera">-</p>
+                </div>
+                <div class="metrica">
+                    <h3>Trocas de Contexto</h3>
+                    <p id="res-trocas">-</p>
+                </div>
+                <div class="metrica">
+                    <h3>Tempo Médio de Resposta</h3>
+                    <p id="res-resposta">-</p>
+                </div>
+                <div class="metrica">
+                    <h3>Tempo Total de Simulação</h3>
+                    <p id="res-tempo-total">-</p>
+                </div>
+            </div>
+
+            <h2>⏳ Diagrama de Tempo</h2>
+            <div id="diagrama-container">
+                <!-- A tabela visual via JS-->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
