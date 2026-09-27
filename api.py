@@ -145,8 +145,6 @@ def simular():
 
 if __name__ == "__main__":
     porta = int(os.environ.get("PORT", 5000))
-    print("\n" + "=" * 65)
-    print(" 🚀 Simulador de Escalonamento de Processos (SO)")
-    print(f" 🌐 Frontend e Backend ativos em: http://localhost:{porta}")
-    print("=" * 65 + "\n")
+    print("Simulador de Escalonamento de Processos (SO)")
+    print(f" Frontend e Backend ativos em: http://localhost:{porta}")
     app.run(host="0.0.0.0", port=porta, debug=True)
