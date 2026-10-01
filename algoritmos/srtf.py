@@ -2,7 +2,7 @@ from escalonador import EscalonadorBase
 
 
 class SRTF(EscalonadorBase):
-    """Shortest Remaining Time First - preemptivo."""
+    # Shortest Remaining Time First - preemptivo.
 
     def executar(self):
         self.reset()
@@ -35,6 +35,6 @@ class SRTF(EscalonadorBase):
             self.executar_um_tick()
             self.finalizar_processo_atual()
             self.avancar_relogio()
-            self.exportar_para_json(nome_algoritmo="SRTF")
+        self.exportar_para_json(nome_algoritmo="SRTF")
 
         return self.resultado("SRTF")

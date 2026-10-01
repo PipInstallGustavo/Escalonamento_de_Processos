@@ -1,5 +1,5 @@
 class Processo:
-    """Representa um processo usado pelo simulador de escalonamento."""
+    # Representa um processo usado pelo simulador de escalonamento.
 
     def __init__(self, id_proc, tempo_chegada, duracao, prioridade=0):
         self.id = str(id_proc)
@@ -19,13 +19,13 @@ class Processo:
         return self.tempo_restante <= 0
 
     def registrar_primeira_execucao(self, tempo):
-        """Registra o primeiro instante em que o processo usa a CPU."""
+        # Registra o primeiro instante em que o processo usa a CPU.
         if self.tempo_inicio is None:
             self.tempo_inicio = tempo
             self.tempo_resposta = tempo - self.tempo_chegada
 
     def finalizar(self, tempo):
-        """Finaliza o processo e calcula seu tempo de espera."""
+        # Finaliza o processo e calcula seu tempo de espera.
         self.tempo_restante = 0
         self.tempo_fim = tempo
         self.estado = "CONCLUIDO"

@@ -19,6 +19,6 @@ class FCFS(EscalonadorBase):
             self.executar_um_tick()
             self.finalizar_processo_atual()
             self.avancar_relogio()
-            self.exportar_para_json(nome_algoritmo="FCFS")
+        self.exportar_para_json(nome_algoritmo="FCFS")
 
         return self.resultado("FCFS")

@@ -2,7 +2,7 @@ from escalonador import EscalonadorBase
 
 
 class SJF(EscalonadorBase):
-    """Shortest Job First não preemptivo."""
+    # Shortest Job First não preemptivo.
 
     def executar(self):
         self.reset()
@@ -24,6 +24,6 @@ class SJF(EscalonadorBase):
             self.executar_um_tick()
             self.finalizar_processo_atual()
             self.avancar_relogio()
-            self.exportar_para_json(nome_algoritmo="SJF")
+        self.exportar_para_json(nome_algoritmo="SJF")
 
         return self.resultado("SJF")

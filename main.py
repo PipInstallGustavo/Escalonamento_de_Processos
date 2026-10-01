@@ -77,31 +77,6 @@ def executar_algoritmos(processos, config):
     return resultados
 
 
-# def main():
-#     try:
-#         config = carregar_config()
-#         processos = ler_processos_stdin()
-
-#         if not processos:
-#             print("Nenhum processo foi informado.")
-#             return
-
-#         resultados = executar_algoritmos(processos, config)
-
-#         print("\nSimulação concluída com sucesso.")
-
-#     except FileNotFoundError:
-#         print("Erro: arquivo config.txt não encontrado.")
-
-#     except ValueError as erro:
-#         print(f"Erro de entrada/configuração: {erro}")
-
-
-# if __name__ == "__main__":
-#     main()
-
-
-
 def main():
     try:
         config = carregar_config()

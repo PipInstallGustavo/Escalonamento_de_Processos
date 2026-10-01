@@ -32,7 +32,8 @@ class EscalonadorBase:
         self.historico = []
 
     def atualizar_chegadas(self):
-        """Coloca na fila os processos que chegaram no instante atual."""
+        # Coloca na fila os processos que chegaram no instante atual.
+
         for processo in self.processos:
             if (
                 processo.tempo_chegada <= self.relogio
@@ -65,7 +66,7 @@ class EscalonadorBase:
         processo.registrar_primeira_execucao(self.relogio)
 
     def executar_um_tick(self):
-        """Executa exatamente um segundo do processo atual."""
+        # Executa exatamente um segundo do processo atual.
         if self.processo_atual is None:
             return
 
@@ -105,18 +106,16 @@ class EscalonadorBase:
         if not self.processos:
             return {}
 
-        turnarounds = [
-            p.tempo_fim - p.tempo_chegada
-            for p in self.processos
-            if p.tempo_fim is not None
-        ]
-
-        esperas = [p.tempo_espera for p in self.processos]
-        respostas = [
-            p.tempo_resposta
-            for p in self.processos
-            if p.tempo_resposta is not None
-        ]
+        turnarounds = [p.tempo_fim - p.tempo_chegada 
+                       for p in self.processos 
+                       if p.tempo_fim is not None]
+        
+        esperas = [p.tempo_espera 
+                   for p in self.processos]
+        
+        respostas = [p.tempo_resposta 
+                     for p in self.processos 
+                     if p.tempo_resposta is not None]
 
         return {
             "trocas_contexto": self.trocas_contexto,
@@ -162,7 +161,7 @@ class EscalonadorBase:
     @staticmethod
     def desempate(processo, melhor, chave):
         """
-        Implementa a ideia geral do enunciado:
+        Implementa a ideia geral do desempate de acordo com o enunciado:
         1. mantém o processo que já está executando quando possível;
         2. depois usa a chave do algoritmo;
         3. usa chegada e ID apenas como desempates determinísticos.

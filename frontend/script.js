@@ -107,18 +107,18 @@ function mostrarResultados(dados) {
     document.getElementById('area-resultados').classList.remove('escondido');
 
     // Preenche métricas
-    document.getElementById('res-turnaround').innerText = dados.metricas.tempoMedioVida + " s";
-    document.getElementById('res-espera').innerText = dados.metricas.tempoMedioEspera + " s";
+    document.getElementById('res-turnaround').innerText = dados.metricas.tempoMedioVida + " ms";
+    document.getElementById('res-espera').innerText = dados.metricas.tempoMedioEspera + " ms";
     document.getElementById('res-trocas').innerText = dados.metricas.trocasContexto;
 
     // Métricas extras
     const elResposta = document.getElementById('res-resposta');
     if (elResposta) {
-        elResposta.innerText = dados.metricas.tempoMedioResposta + " s";
+        elResposta.innerText = dados.metricas.tempoMedioResposta + " ms";
     }
     const elTotal = document.getElementById('res-tempo-total');
     if (elTotal) {
-        elTotal.innerText = dados.metricas.tempoTotalSimulacao + " s";
+        elTotal.innerText = dados.metricas.tempoTotalSimulacao + " ms";
     }
 
     // Constrói a tabela de diagrama de tempo
@@ -127,7 +127,7 @@ function mostrarResultados(dados) {
     // Coleta os IDs reais que apareceram na simulação (inclui processos do backend)
     const pIds = processos.map(p => p.id);
 
-    let htmlTabela = '<table class="tabela-diagrama"><thead><tr><th>Tempo (s)</th>';
+    let htmlTabela = '<table class="tabela-diagrama"><thead><tr><th>Tempo (ms)</th>';
 
     pIds.forEach(id => {
         htmlTabela += `<th>${id}</th>`;

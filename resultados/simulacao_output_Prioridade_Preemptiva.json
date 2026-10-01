@@ -1,63 +1,219 @@
 {
     "algoritmo": "Prioridade_Preemptiva",
     "metricas": {
-        "trocas_contexto": 4,
-        "tempo_total_simulacao": 14,
-        "tempo_espera_medio": 5.25,
-        "tempo_turnaround_medio": 8.75,
-        "tempo_resposta_medio": 4.25
+        "trocas_contexto": 15,
+        "tempo_total_simulacao": 65,
+        "tempo_espera_medio": 32.5,
+        "tempo_turnaround_medio": 36.56,
+        "tempo_resposta_medio": 32.5
     },
     "processos": [
         {
             "id": "P1",
             "tempo_chegada": 0,
-            "duracao": 5,
-            "prioridade": 2,
+            "duracao": 10,
+            "prioridade": 1,
             "tempo_restante": 0,
             "tempo_inicio": 0,
-            "tempo_fim": 9,
+            "tempo_fim": 10,
             "tempo_resposta": 0,
-            "tempo_espera": 4,
-            "tempo_turnaround": 9,
+            "tempo_espera": 0,
+            "tempo_turnaround": 10,
             "estado": "CONCLUIDO"
         },
         {
             "id": "P2",
             "tempo_chegada": 0,
             "duracao": 2,
-            "prioridade": 3,
+            "prioridade": 5,
             "tempo_restante": 0,
-            "tempo_inicio": 9,
-            "tempo_fim": 11,
-            "tempo_resposta": 9,
-            "tempo_espera": 9,
-            "tempo_turnaround": 11,
+            "tempo_inicio": 49,
+            "tempo_fim": 51,
+            "tempo_resposta": 49,
+            "tempo_espera": 49,
+            "tempo_turnaround": 51,
             "estado": "CONCLUIDO"
         },
         {
             "id": "P3",
-            "tempo_chegada": 1,
-            "duracao": 4,
-            "prioridade": 1,
+            "tempo_chegada": 0,
+            "duracao": 2,
+            "prioridade": 5,
             "tempo_restante": 0,
-            "tempo_inicio": 1,
-            "tempo_fim": 5,
-            "tempo_resposta": 0,
-            "tempo_espera": 0,
-            "tempo_turnaround": 4,
+            "tempo_inicio": 51,
+            "tempo_fim": 53,
+            "tempo_resposta": 51,
+            "tempo_espera": 51,
+            "tempo_turnaround": 53,
             "estado": "CONCLUIDO"
         },
         {
             "id": "P4",
-            "tempo_chegada": 3,
-            "duracao": 3,
+            "tempo_chegada": 1,
+            "duracao": 8,
             "prioridade": 4,
             "tempo_restante": 0,
-            "tempo_inicio": 11,
-            "tempo_fim": 14,
-            "tempo_resposta": 8,
-            "tempo_espera": 8,
-            "tempo_turnaround": 11,
+            "tempo_inicio": 41,
+            "tempo_fim": 49,
+            "tempo_resposta": 40,
+            "tempo_espera": 40,
+            "tempo_turnaround": 48,
+            "estado": "CONCLUIDO"
+        },
+        {
+            "id": "P5",
+            "tempo_chegada": 2,
+            "duracao": 2,
+            "prioridade": 5,
+            "tempo_restante": 0,
+            "tempo_inicio": 53,
+            "tempo_fim": 55,
+            "tempo_resposta": 51,
+            "tempo_espera": 51,
+            "tempo_turnaround": 53,
+            "estado": "CONCLUIDO"
+        },
+        {
+            "id": "P6",
+            "tempo_chegada": 3,
+            "duracao": 6,
+            "prioridade": 3,
+            "tempo_restante": 0,
+            "tempo_inicio": 35,
+            "tempo_fim": 41,
+            "tempo_resposta": 32,
+            "tempo_espera": 32,
+            "tempo_turnaround": 38,
+            "estado": "CONCLUIDO"
+        },
+        {
+            "id": "P7",
+            "tempo_chegada": 4,
+            "duracao": 2,
+            "prioridade": 5,
+            "tempo_restante": 0,
+            "tempo_inicio": 55,
+            "tempo_fim": 57,
+            "tempo_resposta": 51,
+            "tempo_espera": 51,
+            "tempo_turnaround": 53,
+            "estado": "CONCLUIDO"
+        },
+        {
+            "id": "P8",
+            "tempo_chegada": 5,
+            "duracao": 8,
+            "prioridade": 2,
+            "tempo_restante": 0,
+            "tempo_inicio": 24,
+            "tempo_fim": 32,
+            "tempo_resposta": 19,
+            "tempo_espera": 19,
+            "tempo_turnaround": 27,
+            "estado": "CONCLUIDO"
+        },
+        {
+            "id": "P9",
+            "tempo_chegada": 6,
+            "duracao": 2,
+            "prioridade": 5,
+            "tempo_restante": 0,
+            "tempo_inicio": 57,
+            "tempo_fim": 59,
+            "tempo_resposta": 51,
+            "tempo_espera": 51,
+            "tempo_turnaround": 53,
+            "estado": "CONCLUIDO"
+        },
+        {
+            "id": "P10",
+            "tempo_chegada": 7,
+            "duracao": 6,
+            "prioridade": 1,
+            "tempo_restante": 0,
+            "tempo_inicio": 10,
+            "tempo_fim": 16,
+            "tempo_resposta": 3,
+            "tempo_espera": 3,
+            "tempo_turnaround": 9,
+            "estado": "CONCLUIDO"
+        },
+        {
+            "id": "P11",
+            "tempo_chegada": 8,
+            "duracao": 2,
+            "prioridade": 5,
+            "tempo_restante": 0,
+            "tempo_inicio": 59,
+            "tempo_fim": 61,
+            "tempo_resposta": 51,
+            "tempo_espera": 51,
+            "tempo_turnaround": 53,
+            "estado": "CONCLUIDO"
+        },
+        {
+            "id": "P12",
+            "tempo_chegada": 10,
+            "duracao": 4,
+            "prioridade": 2,
+            "tempo_restante": 0,
+            "tempo_inicio": 20,
+            "tempo_fim": 24,
+            "tempo_resposta": 10,
+            "tempo_espera": 10,
+            "tempo_turnaround": 14,
+            "estado": "CONCLUIDO"
+        },
+        {
+            "id": "P13",
+            "tempo_chegada": 12,
+            "duracao": 2,
+            "prioridade": 5,
+            "tempo_restante": 0,
+            "tempo_inicio": 61,
+            "tempo_fim": 63,
+            "tempo_resposta": 49,
+            "tempo_espera": 49,
+            "tempo_turnaround": 51,
+            "estado": "CONCLUIDO"
+        },
+        {
+            "id": "P14",
+            "tempo_chegada": 14,
+            "duracao": 4,
+            "prioridade": 1,
+            "tempo_restante": 0,
+            "tempo_inicio": 16,
+            "tempo_fim": 20,
+            "tempo_resposta": 2,
+            "tempo_espera": 2,
+            "tempo_turnaround": 6,
+            "estado": "CONCLUIDO"
+        },
+        {
+            "id": "P15",
+            "tempo_chegada": 16,
+            "duracao": 2,
+            "prioridade": 5,
+            "tempo_restante": 0,
+            "tempo_inicio": 63,
+            "tempo_fim": 65,
+            "tempo_resposta": 47,
+            "tempo_espera": 47,
+            "tempo_turnaround": 49,
+            "estado": "CONCLUIDO"
+        },
+        {
+            "id": "P16",
+            "tempo_chegada": 18,
+            "duracao": 3,
+            "prioridade": 3,
+            "tempo_restante": 0,
+            "tempo_inicio": 32,
+            "tempo_fim": 35,
+            "tempo_resposta": 14,
+            "tempo_espera": 14,
+            "tempo_turnaround": 17,
             "estado": "CONCLUIDO"
         }
     ],
@@ -66,41 +222,50 @@
             "tempo": 0,
             "cpu": "P1",
             "fila_prontos": [
-                "P2"
+                "P2",
+                "P3"
             ]
         },
         {
             "tempo": 1,
-            "cpu": "P3",
+            "cpu": "P1",
             "fila_prontos": [
                 "P2",
-                "P1"
+                "P3",
+                "P4"
             ]
         },
         {
             "tempo": 2,
-            "cpu": "P3",
+            "cpu": "P1",
             "fila_prontos": [
                 "P2",
-                "P1"
+                "P3",
+                "P4",
+                "P5"
             ]
         },
         {
             "tempo": 3,
-            "cpu": "P3",
+            "cpu": "P1",
             "fila_prontos": [
                 "P2",
-                "P1",
-                "P4"
+                "P3",
+                "P4",
+                "P5",
+                "P6"
             ]
         },
         {
             "tempo": 4,
-            "cpu": "P3",
+            "cpu": "P1",
             "fila_prontos": [
                 "P2",
-                "P1",
-                "P4"
+                "P3",
+                "P4",
+                "P5",
+                "P6",
+                "P7"
             ]
         },
         {
@@ -108,7 +273,12 @@
             "cpu": "P1",
             "fila_prontos": [
                 "P2",
-                "P4"
+                "P3",
+                "P4",
+                "P5",
+                "P6",
+                "P7",
+                "P8"
             ]
         },
         {
@@ -116,7 +286,13 @@
             "cpu": "P1",
             "fila_prontos": [
                 "P2",
-                "P4"
+                "P3",
+                "P4",
+                "P5",
+                "P6",
+                "P7",
+                "P8",
+                "P9"
             ]
         },
         {
@@ -124,7 +300,14 @@
             "cpu": "P1",
             "fila_prontos": [
                 "P2",
-                "P4"
+                "P3",
+                "P4",
+                "P5",
+                "P6",
+                "P7",
+                "P8",
+                "P9",
+                "P10"
             ]
         },
         {
@@ -132,36 +315,815 @@
             "cpu": "P1",
             "fila_prontos": [
                 "P2",
-                "P4"
+                "P3",
+                "P4",
+                "P5",
+                "P6",
+                "P7",
+                "P8",
+                "P9",
+                "P10",
+                "P11"
             ]
         },
         {
             "tempo": 9,
-            "cpu": "P2",
+            "cpu": "P1",
             "fila_prontos": [
-                "P4"
+                "P2",
+                "P3",
+                "P4",
+                "P5",
+                "P6",
+                "P7",
+                "P8",
+                "P9",
+                "P10",
+                "P11"
             ]
         },
         {
             "tempo": 10,
-            "cpu": "P2",
+            "cpu": "P10",
             "fila_prontos": [
-                "P4"
+                "P2",
+                "P3",
+                "P4",
+                "P5",
+                "P6",
+                "P7",
+                "P8",
+                "P9",
+                "P11",
+                "P12"
             ]
         },
         {
             "tempo": 11,
-            "cpu": "P4",
-            "fila_prontos": []
+            "cpu": "P10",
+            "fila_prontos": [
+                "P2",
+                "P3",
+                "P4",
+                "P5",
+                "P6",
+                "P7",
+                "P8",
+                "P9",
+                "P11",
+                "P12"
+            ]
         },
         {
             "tempo": 12,
-            "cpu": "P4",
-            "fila_prontos": []
+            "cpu": "P10",
+            "fila_prontos": [
+                "P2",
+                "P3",
+                "P4",
+                "P5",
+                "P6",
+                "P7",
+                "P8",
+                "P9",
+                "P11",
+                "P12",
+                "P13"
+            ]
         },
         {
             "tempo": 13,
+            "cpu": "P10",
+            "fila_prontos": [
+                "P2",
+                "P3",
+                "P4",
+                "P5",
+                "P6",
+                "P7",
+                "P8",
+                "P9",
+                "P11",
+                "P12",
+                "P13"
+            ]
+        },
+        {
+            "tempo": 14,
+            "cpu": "P10",
+            "fila_prontos": [
+                "P2",
+                "P3",
+                "P4",
+                "P5",
+                "P6",
+                "P7",
+                "P8",
+                "P9",
+                "P11",
+                "P12",
+                "P13",
+                "P14"
+            ]
+        },
+        {
+            "tempo": 15,
+            "cpu": "P10",
+            "fila_prontos": [
+                "P2",
+                "P3",
+                "P4",
+                "P5",
+                "P6",
+                "P7",
+                "P8",
+                "P9",
+                "P11",
+                "P12",
+                "P13",
+                "P14"
+            ]
+        },
+        {
+            "tempo": 16,
+            "cpu": "P14",
+            "fila_prontos": [
+                "P2",
+                "P3",
+                "P4",
+                "P5",
+                "P6",
+                "P7",
+                "P8",
+                "P9",
+                "P11",
+                "P12",
+                "P13",
+                "P15"
+            ]
+        },
+        {
+            "tempo": 17,
+            "cpu": "P14",
+            "fila_prontos": [
+                "P2",
+                "P3",
+                "P4",
+                "P5",
+                "P6",
+                "P7",
+                "P8",
+                "P9",
+                "P11",
+                "P12",
+                "P13",
+                "P15"
+            ]
+        },
+        {
+            "tempo": 18,
+            "cpu": "P14",
+            "fila_prontos": [
+                "P2",
+                "P3",
+                "P4",
+                "P5",
+                "P6",
+                "P7",
+                "P8",
+                "P9",
+                "P11",
+                "P12",
+                "P13",
+                "P15",
+                "P16"
+            ]
+        },
+        {
+            "tempo": 19,
+            "cpu": "P14",
+            "fila_prontos": [
+                "P2",
+                "P3",
+                "P4",
+                "P5",
+                "P6",
+                "P7",
+                "P8",
+                "P9",
+                "P11",
+                "P12",
+                "P13",
+                "P15",
+                "P16"
+            ]
+        },
+        {
+            "tempo": 20,
+            "cpu": "P12",
+            "fila_prontos": [
+                "P2",
+                "P3",
+                "P4",
+                "P5",
+                "P6",
+                "P7",
+                "P8",
+                "P9",
+                "P11",
+                "P13",
+                "P15",
+                "P16"
+            ]
+        },
+        {
+            "tempo": 21,
+            "cpu": "P12",
+            "fila_prontos": [
+                "P2",
+                "P3",
+                "P4",
+                "P5",
+                "P6",
+                "P7",
+                "P8",
+                "P9",
+                "P11",
+                "P13",
+                "P15",
+                "P16"
+            ]
+        },
+        {
+            "tempo": 22,
+            "cpu": "P12",
+            "fila_prontos": [
+                "P2",
+                "P3",
+                "P4",
+                "P5",
+                "P6",
+                "P7",
+                "P8",
+                "P9",
+                "P11",
+                "P13",
+                "P15",
+                "P16"
+            ]
+        },
+        {
+            "tempo": 23,
+            "cpu": "P12",
+            "fila_prontos": [
+                "P2",
+                "P3",
+                "P4",
+                "P5",
+                "P6",
+                "P7",
+                "P8",
+                "P9",
+                "P11",
+                "P13",
+                "P15",
+                "P16"
+            ]
+        },
+        {
+            "tempo": 24,
+            "cpu": "P8",
+            "fila_prontos": [
+                "P2",
+                "P3",
+                "P4",
+                "P5",
+                "P6",
+                "P7",
+                "P9",
+                "P11",
+                "P13",
+                "P15",
+                "P16"
+            ]
+        },
+        {
+            "tempo": 25,
+            "cpu": "P8",
+            "fila_prontos": [
+                "P2",
+                "P3",
+                "P4",
+                "P5",
+                "P6",
+                "P7",
+                "P9",
+                "P11",
+                "P13",
+                "P15",
+                "P16"
+            ]
+        },
+        {
+            "tempo": 26,
+            "cpu": "P8",
+            "fila_prontos": [
+                "P2",
+                "P3",
+                "P4",
+                "P5",
+                "P6",
+                "P7",
+                "P9",
+                "P11",
+                "P13",
+                "P15",
+                "P16"
+            ]
+        },
+        {
+            "tempo": 27,
+            "cpu": "P8",
+            "fila_prontos": [
+                "P2",
+                "P3",
+                "P4",
+                "P5",
+                "P6",
+                "P7",
+                "P9",
+                "P11",
+                "P13",
+                "P15",
+                "P16"
+            ]
+        },
+        {
+            "tempo": 28,
+            "cpu": "P8",
+            "fila_prontos": [
+                "P2",
+                "P3",
+                "P4",
+                "P5",
+                "P6",
+                "P7",
+                "P9",
+                "P11",
+                "P13",
+                "P15",
+                "P16"
+            ]
+        },
+        {
+            "tempo": 29,
+            "cpu": "P8",
+            "fila_prontos": [
+                "P2",
+                "P3",
+                "P4",
+                "P5",
+                "P6",
+                "P7",
+                "P9",
+                "P11",
+                "P13",
+                "P15",
+                "P16"
+            ]
+        },
+        {
+            "tempo": 30,
+            "cpu": "P8",
+            "fila_prontos": [
+                "P2",
+                "P3",
+                "P4",
+                "P5",
+                "P6",
+                "P7",
+                "P9",
+                "P11",
+                "P13",
+                "P15",
+                "P16"
+            ]
+        },
+        {
+            "tempo": 31,
+            "cpu": "P8",
+            "fila_prontos": [
+                "P2",
+                "P3",
+                "P4",
+                "P5",
+                "P6",
+                "P7",
+                "P9",
+                "P11",
+                "P13",
+                "P15",
+                "P16"
+            ]
+        },
+        {
+            "tempo": 32,
+            "cpu": "P16",
+            "fila_prontos": [
+                "P2",
+                "P3",
+                "P4",
+                "P5",
+                "P6",
+                "P7",
+                "P9",
+                "P11",
+                "P13",
+                "P15"
+            ]
+        },
+        {
+            "tempo": 33,
+            "cpu": "P16",
+            "fila_prontos": [
+                "P2",
+                "P3",
+                "P4",
+                "P5",
+                "P6",
+                "P7",
+                "P9",
+                "P11",
+                "P13",
+                "P15"
+            ]
+        },
+        {
+            "tempo": 34,
+            "cpu": "P16",
+            "fila_prontos": [
+                "P2",
+                "P3",
+                "P4",
+                "P5",
+                "P6",
+                "P7",
+                "P9",
+                "P11",
+                "P13",
+                "P15"
+            ]
+        },
+        {
+            "tempo": 35,
+            "cpu": "P6",
+            "fila_prontos": [
+                "P2",
+                "P3",
+                "P4",
+                "P5",
+                "P7",
+                "P9",
+                "P11",
+                "P13",
+                "P15"
+            ]
+        },
+        {
+            "tempo": 36,
+            "cpu": "P6",
+            "fila_prontos": [
+                "P2",
+                "P3",
+                "P4",
+                "P5",
+                "P7",
+                "P9",
+                "P11",
+                "P13",
+                "P15"
+            ]
+        },
+        {
+            "tempo": 37,
+            "cpu": "P6",
+            "fila_prontos": [
+                "P2",
+                "P3",
+                "P4",
+                "P5",
+                "P7",
+                "P9",
+                "P11",
+                "P13",
+                "P15"
+            ]
+        },
+        {
+            "tempo": 38,
+            "cpu": "P6",
+            "fila_prontos": [
+                "P2",
+                "P3",
+                "P4",
+                "P5",
+                "P7",
+                "P9",
+                "P11",
+                "P13",
+                "P15"
+            ]
+        },
+        {
+            "tempo": 39,
+            "cpu": "P6",
+            "fila_prontos": [
+                "P2",
+                "P3",
+                "P4",
+                "P5",
+                "P7",
+                "P9",
+                "P11",
+                "P13",
+                "P15"
+            ]
+        },
+        {
+            "tempo": 40,
+            "cpu": "P6",
+            "fila_prontos": [
+                "P2",
+                "P3",
+                "P4",
+                "P5",
+                "P7",
+                "P9",
+                "P11",
+                "P13",
+                "P15"
+            ]
+        },
+        {
+            "tempo": 41,
             "cpu": "P4",
+            "fila_prontos": [
+                "P2",
+                "P3",
+                "P5",
+                "P7",
+                "P9",
+                "P11",
+                "P13",
+                "P15"
+            ]
+        },
+        {
+            "tempo": 42,
+            "cpu": "P4",
+            "fila_prontos": [
+                "P2",
+                "P3",
+                "P5",
+                "P7",
+                "P9",
+                "P11",
+                "P13",
+                "P15"
+            ]
+        },
+        {
+            "tempo": 43,
+            "cpu": "P4",
+            "fila_prontos": [
+                "P2",
+                "P3",
+                "P5",
+                "P7",
+                "P9",
+                "P11",
+                "P13",
+                "P15"
+            ]
+        },
+        {
+            "tempo": 44,
+            "cpu": "P4",
+            "fila_prontos": [
+                "P2",
+                "P3",
+                "P5",
+                "P7",
+                "P9",
+                "P11",
+                "P13",
+                "P15"
+            ]
+        },
+        {
+            "tempo": 45,
+            "cpu": "P4",
+            "fila_prontos": [
+                "P2",
+                "P3",
+                "P5",
+                "P7",
+                "P9",
+                "P11",
+                "P13",
+                "P15"
+            ]
+        },
+        {
+            "tempo": 46,
+            "cpu": "P4",
+            "fila_prontos": [
+                "P2",
+                "P3",
+                "P5",
+                "P7",
+                "P9",
+                "P11",
+                "P13",
+                "P15"
+            ]
+        },
+        {
+            "tempo": 47,
+            "cpu": "P4",
+            "fila_prontos": [
+                "P2",
+                "P3",
+                "P5",
+                "P7",
+                "P9",
+                "P11",
+                "P13",
+                "P15"
+            ]
+        },
+        {
+            "tempo": 48,
+            "cpu": "P4",
+            "fila_prontos": [
+                "P2",
+                "P3",
+                "P5",
+                "P7",
+                "P9",
+                "P11",
+                "P13",
+                "P15"
+            ]
+        },
+        {
+            "tempo": 49,
+            "cpu": "P2",
+            "fila_prontos": [
+                "P3",
+                "P5",
+                "P7",
+                "P9",
+                "P11",
+                "P13",
+                "P15"
+            ]
+        },
+        {
+            "tempo": 50,
+            "cpu": "P2",
+            "fila_prontos": [
+                "P3",
+                "P5",
+                "P7",
+                "P9",
+                "P11",
+                "P13",
+                "P15"
+            ]
+        },
+        {
+            "tempo": 51,
+            "cpu": "P3",
+            "fila_prontos": [
+                "P5",
+                "P7",
+                "P9",
+                "P11",
+                "P13",
+                "P15"
+            ]
+        },
+        {
+            "tempo": 52,
+            "cpu": "P3",
+            "fila_prontos": [
+                "P5",
+                "P7",
+                "P9",
+                "P11",
+                "P13",
+                "P15"
+            ]
+        },
+        {
+            "tempo": 53,
+            "cpu": "P5",
+            "fila_prontos": [
+                "P7",
+                "P9",
+                "P11",
+                "P13",
+                "P15"
+            ]
+        },
+        {
+            "tempo": 54,
+            "cpu": "P5",
+            "fila_prontos": [
+                "P7",
+                "P9",
+                "P11",
+                "P13",
+                "P15"
+            ]
+        },
+        {
+            "tempo": 55,
+            "cpu": "P7",
+            "fila_prontos": [
+                "P9",
+                "P11",
+                "P13",
+                "P15"
+            ]
+        },
+        {
+            "tempo": 56,
+            "cpu": "P7",
+            "fila_prontos": [
+                "P9",
+                "P11",
+                "P13",
+                "P15"
+            ]
+        },
+        {
+            "tempo": 57,
+            "cpu": "P9",
+            "fila_prontos": [
+                "P11",
+                "P13",
+                "P15"
+            ]
+        },
+        {
+            "tempo": 58,
+            "cpu": "P9",
+            "fila_prontos": [
+                "P11",
+                "P13",
+                "P15"
+            ]
+        },
+        {
+            "tempo": 59,
+            "cpu": "P11",
+            "fila_prontos": [
+                "P13",
+                "P15"
+            ]
+        },
+        {
+            "tempo": 60,
+            "cpu": "P11",
+            "fila_prontos": [
+                "P13",
+                "P15"
+            ]
+        },
+        {
+            "tempo": 61,
+            "cpu": "P13",
+            "fila_prontos": [
+                "P15"
+            ]
+        },
+        {
+            "tempo": 62,
+            "cpu": "P13",
+            "fila_prontos": [
+                "P15"
+            ]
+        },
+        {
+            "tempo": 63,
+            "cpu": "P15",
+            "fila_prontos": []
+        },
+        {
+            "tempo": 64,
+            "cpu": "P15",
             "fila_prontos": []
         }
     ]
